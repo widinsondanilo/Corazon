@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0f0909;
+}
+p {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align:left;
+    margin: 5;
+}
+.flower {
+   
+    width: 150px;
+    height: 150px;
+}
+
+.petal {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.petal:nth-child(1) {
+    top: 0;
+    left: 35px;
+}
+
+.petal:nth-child(2) {
+    top: 0;
+    right: 35px;
+}
+
+.petal:nth-child(3) {
+    bottom: 0;
+    left: 35px;
+}
+
+.petal:nth-child(4) {
+    bottom: 0;
+    right: 35px;
+}
+
+.center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    left: 50px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+position: right;
+    transform: rotate(-80deg);
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: red;
+    position: absolute;
+}
+
+.heart:before {
+    left: 20px;
+    top: 0;
+}
+
+.heart:after {
+    left: 0;
+    top: 20px;
+}
